@@ -66,7 +66,7 @@
   }
   
   .author-details {
-    flex-grow: 0;
+    flex-grow: 1;
   }
   
   .author-name {
@@ -81,10 +81,36 @@
     font-size: 12px;
     color: hsl(212, 23%, 69%);
   }
+  .share-icon-container {
+    position: relative;
+  }
   
+ 
   .share-icon {
     width: 16px;
     height: 16px;
     cursor: pointer;
   }
+  .share-options {
+    display: none; /* Hide by default */
+    position: absolute;
+    bottom: 40px; /* Adjust as needed */
+    right: 0;
+    background: hsl(217, 19%, 35%) ;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    width: 100px;
+  }
   
+  .share-icon-container:hover .share-options {
+    display: block; /* Show on hover */
+  }
+  .icons{
+    display: flex;
+    align-content: center;
+    gap: 8px;
+    justify-content:center;
+  }
